@@ -9,7 +9,7 @@ const BlogPage = () => {
 
       <ul>
         {blogdata.map((post) => (
-          <BlogLink post={post} />
+          <BlogLink key={post.slug} post={post} />
         ))}
       </ul>
     </>
